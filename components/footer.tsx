@@ -56,13 +56,20 @@ export function Footer() {
           <div>
             <h3 className="font-serif text-lg font-semibold mb-4 text-primary-foreground">Customer Service</h3>
             <ul className="space-y-2">
-              {["Track Order", "Shipping Policy", "Return Policy", "FAQs", "Privacy Policy", "Terms of Service"].map((item) => (
-                <li key={item}>
+              {[
+                { label: "Track Order", href: "/track-order" },
+                { label: "Shipping Policy", href: "/shipping-policy" },
+                { label: "Return Policy", href: "/return-policy" },
+                { label: "FAQs", href: "/faq" },
+                { label: "Privacy Policy", href: "/privacy-policy" },
+                { label: "Terms of Service", href: "/terms-of-service" }
+              ].map((item) => (
+                <li key={item.label}>
                   <Link 
-                    href="#"
+                    href={item.href}
                     className="text-primary-foreground/70 hover:text-primary-foreground text-sm transition-colors"
                   >
-                    {item}
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -75,11 +82,11 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-primary-foreground/70">
                 <MapPin className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                <span>123 Fragrance Street, Aromatic City, India - 560001</span>
+                <span>RV University campus, Mysuru road, Bangalore - 560059</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <Phone className="h-5 w-5 flex-shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 7019489467</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <Mail className="h-5 w-5 flex-shrink-0" />

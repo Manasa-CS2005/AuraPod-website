@@ -7,7 +7,7 @@ const products = [
   {
     id: "pla-cylindrical",
     name: "AuraPod PLA Cylindrical",
-    price: 599,
+    price: 549,
     image: "/images/products/pla-pod.png",
     description: "Eco-friendly PLA design"
   },
@@ -19,16 +19,16 @@ const products = [
     description: "Elegant vase-style PLA design"
   },
   {
-    id: "wood-standard",
-    name: "AuraPod Wood",
-    price: 699,
+    id: "wood-premium",
+    name: "AuraPod Wood Premium",
+    price: 799,
     image: "/images/hero-product.png",
     description: "Premium wood finish design"
   },
   {
-    id: "wood-premium",
-    name: "AuraPod Wood Premium",
-    price: 899,
+    id: "wood-standard",
+    name: "AuraPod Wood Standard",
+    price: 699,
     image: "/images/products/wood-cylindrical-1.png",
     description: "Exclusive artisan wood collection"
   },
