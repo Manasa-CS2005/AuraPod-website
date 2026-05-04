@@ -14,7 +14,7 @@ export function Footer() {
               alt="AuraPod" 
               width={140} 
               height={50}
-              className="h-12 w-auto brightness-0 invert"
+              className="h-12 w-auto invert opacity-95"
             />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Where Décor Breathes. Transform your space with passive fragrance décor that brings natural ambience without electricity.
